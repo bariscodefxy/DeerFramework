@@ -1,0 +1,9 @@
+{
+    "name": "bariscodefx/deer",
+    "autoload": {
+    	"psr-4": {
+    		"Deer\\": "src/"
+    	}
+    },
+    "require": {}
+}
