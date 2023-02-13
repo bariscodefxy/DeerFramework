@@ -1,12 +1,12 @@
 <?php
 
-use Buki\Router\Http\Middleware;
+use Deer\Http\Middleware;
 
 class UserMiddleware extends Middleware {
 
 	public function handle()
 	{
-		echo "UserMiddleware worked! WoW<br>";
+		echo "UserMiddleware worked! WoW<br><br>";
 
 		return true;
 	}
