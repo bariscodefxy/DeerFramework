@@ -2,6 +2,8 @@
 
 namespace Deer;
 
+use Buki\Router\Router;
+
 class Deer {
 
 	private Router $router;
@@ -11,7 +13,7 @@ class Deer {
 		// spawned deer framework
 	}
 
-	public function spawnRouter(): Router
+	public function getRouter(): Router
 	{
 		$this->router = new Router();
 
@@ -20,7 +22,7 @@ class Deer {
 
 	public function do(): void
 	{
-		echo $this->router->handle();
+		$this->router->run();
 	}
 
 }

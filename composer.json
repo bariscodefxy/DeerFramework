@@ -5,5 +5,7 @@
     		"Deer\\": "src/"
     	}
     },
-    "require": {}
+    "require": {
+        "izniburak/router": "^2.5"
+    }
 }
