@@ -6,6 +6,7 @@
     	}
     },
     "require": {
-        "izniburak/router": "^2.5"
+        "izniburak/router": "^2.5",
+        "cboden/ratchet": "^0.4.4"
     }
 }

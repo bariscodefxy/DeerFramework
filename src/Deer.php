@@ -3,6 +3,8 @@
 namespace Deer;
 
 use Buki\Router\Router;
+use Deer\Server\Launcher;
+use Ratchet\MessageComponentInterface;
 
 class Deer {
 
@@ -20,9 +22,20 @@ class Deer {
 		return $this->router;
 	}
 
+	public function launchServer($serverClass, int $port = 8080): void
+	{
+		if( $serverClass instanceof messageComponentInterface )
+		{
+			Launcher::launchWsServer($serverClass, $port);
+		}
+	}
+
 	public function do(): void
 	{
-		$this->router->run();
+		if( isset($this->router) )
+		{
+			$this->router->run();
+		}
 	}
 
 }
